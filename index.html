@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>SecretBox - SKUFES! Project</title>
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/semantic/semantic.mod.min.css">
+    <script src="/static/semantic/semantic.min.js"></script>
+    <style>
+      #skufes-icon {
+        display: inline;
+        width: 1.2rem;
+        margin-right: 7px;
+        vertical-align: top;
+      }
+      #app > .ui.container {
+          max-width: 800px !important;
+      }
+      #app > .segment > .ui.container {
+          max-width: 800px !important;
+      }
+      [lang*=Hans], [lang=zh-CN], article strong:lang(zh-CN), article strong:lang(zh-Hans), html:lang(zh-CN), html:lang(zh-Hans) {
+          font-family: "Biaodian Pro Sans GB","Lato","Helvetica Neue",Helvetica,Arial,"Han Heiti GB",sans-serif;
+      }
+      [lang^=ja], article strong:lang(ja), html:lang(ja) {
+          font-family: "Yakumono Sans","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+    </style>
+  </head>
+  <body lang="ja" class="han-init">
+    <div class="ui container" style="padding: 30px 0 15px 0;">
+      <div class="ui big breadcrumb">
+        <img src="/static/images/favicon.png" srcset="/static/images/skufes-icon.svg" alt="SKUFES! Project" class="ui middle aligned small image" id="skufes-icon">
+        <a class="section" href="https://skufes.moe/">SKUFES! Project</a>
+        <div class="divider"> / </div>
+        <div class="active section">SecretBox</div>
+      </div>
+    </div>
+    <div id="app"></div>
+  </body>
+  <script src="/dist/build.js"></script>
+</html>
